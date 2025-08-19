@@ -18,12 +18,13 @@ kernelpath = os.path.join("share", "jupyter", "kernels", "singular")
 nbextpath = os.path.join("share", "jupyter", "nbextensions", "singular-mode")
 nbconfpath = os.path.join("etc", "jupyter", "nbconfig", "notebook.d")
 
-setup( name="jupyter_kernel_singular"
-     , version="0.9.9"
-     , description="A Jupyter kernel for singular"
+setup( name="passagemath-singular-jupyterkernel"
+     , version="0.9.9.1"
+     , description="A Jupyter kernel for Singular (passagemath fork of jupyter_kernel_singular)"
      , author="Sebastian Gutsche"
      , author_email="sebastian.gutsche@gmail.com"
-     , url="https://github.com/sebasguts/jupyter-singular"
+     , maintainer="Matthias Koeppe and passagemath contributors"
+     , url="https://github.com/passagemath/passagemath-singular-jupyterkernel"
      , packages=["jupyter_kernel_singular"]
      , package_dir={"jupyter_kernel_singular": "jupyter_kernel_singular"}
      , data_files=[(kernelpath, glob("jupyter_kernel_singular/resources/*")),
